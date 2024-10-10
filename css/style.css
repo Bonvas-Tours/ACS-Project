@@ -68,6 +68,7 @@ body {
 
 .custom_heading-text {
   text-align: center;
+  font-size: 18px;
 }
 
 
@@ -197,6 +198,8 @@ a:focus {
 
 .slider_img-box img {
   width: 100%;
+  border-radius: 70% / 50%;
+  /* Adjust values for a horizontal or vertical oval */
 }
 
 .slider_item-container {
@@ -304,18 +307,21 @@ a:focus {
 
 
 
-/* service section */
+/* packages section */
 .service_section .card .card-img-top {
-  width: 100px;
-  height: 100px;
+  width: 250px;
+  height: 150px;
   margin: 55px auto 5px auto;
+  border-radius: 25%;
 }
+
+
+
 
 .service_section .card {
   text-align: center;
   box-sizing: border-box;
   position: relative;
- 
 }
 
 .service_section .card .card-title {
@@ -520,21 +526,92 @@ a:focus {
 
 
 /* footer section*/
-
 .footer_section {
-  background-color: #efeded;
-  padding: 20px 0;
-  font-family: "Roboto", sans-serif;
+  background-color: #03071e;
+  color: #f7f7f7;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
 }
 
-.footer_section p {
-  color: #191818;
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.contact-details,
+.contact-info,
+.map {
+  width: 30%;
+}
+
+.contact-details h3,
+.contact-info h4,
+.map h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact-details p,
+.contact-info p {
+  margin: 5px 0;
+}
+
+.contact-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-details ul li {
+  margin-bottom: 10px;
+}
+
+.contact-details ul li a {
+  color: #fb8500;
+  text-decoration: none;
+}
+
+.contact-details ul li a i {
+  margin-right: 5px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+}
+
+.footer-bottom p {
   margin: 0;
-  text-align: center;
 }
 
-.footer_section a {
-  color: #191818;
+.social-icons a {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 10px;
 }
+
+.social-icons a:hover {
+  color: #f8bb00;
+}
+
+.map iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+
+
+
+
+
+
+
+
 
 /* end footer section*/
