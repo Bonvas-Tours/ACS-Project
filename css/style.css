@@ -298,24 +298,22 @@ a:focus {
   margin-top: 100px;
 }
 
-
 #section-2 {
   margin-top: -200px;
 }
-
 
 .about_section .img-box img {
   width: 100%;
   margin-left: 100px;
 }
 
+/* Fixed the typo: 'about8px' to '8px' */
 .about_section .detail-box a {
   display: inline-block;
-  padding: about8px 35px;
+  padding: 8px 35px; /* Fixed padding */
   background-color: #e93f1a;
   color: #ffffff;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
   border: 1px solid transparent;
   border-radius: 5px;
   margin-top: 100px;
@@ -326,6 +324,42 @@ a:focus {
   border-color: #e93f1a;
   color: #e93f1a;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about_section {
+    margin-top: 50px;
+  }
+
+  #section-2 {
+    margin-top: -100px;
+  }
+
+  .about_section .img-box img {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .about_section .detail-box a {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about_section {
+    margin-top: 30px;
+  }
+
+  #section-2 {
+    margin-top: -50px;
+  }
+
+  .about_section .detail-box a {
+    margin-top: 30px;
+    padding: 6px 25px;
+  }
+}
+
 
 
 /* packages section */
@@ -503,6 +537,7 @@ margin-left: 50px;
 /* map section */
 .map_section {
   height: 500px;
+
 }
 
 
@@ -560,11 +595,11 @@ margin-left: 50px;
   font-weight: bold;
 }
 
-
 .footer-content {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .contact-details,
@@ -609,10 +644,15 @@ margin-left: 50px;
   align-items: center;
   padding: 10px 0;
   border-top: 1px solid #ccc;
+  flex-wrap: wrap;
 }
 
 .footer-bottom p {
   margin: 0;
+}
+
+.social-icons {
+  margin-top: 10px;
 }
 
 .social-icons a {
@@ -631,6 +671,57 @@ margin-left: 50px;
   border: none;
   margin-left: 70px;
 }
+
+/* Responsive design for tablets */
+@media (max-width: 768px) {
+  .contact-details,
+  .contact-info,
+  .map {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .map iframe {
+    margin-left: 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Responsive design for mobile phones */
+@media (max-width: 480px) {
+  .footer_section {
+    padding: 20px 0;
+  }
+
+  .contact-details h3,
+  .contact-info h4,
+  .map h4 {
+    font-size: 16px;
+  }
+
+  .social-icons a {
+    font-size: 18px;
+    margin-left: 8px;
+  }
+
+  .map iframe {
+    height: 150px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-icons {
+    margin-top: 15px;
+  }
+}
+
 
 
 
