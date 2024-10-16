@@ -30,6 +30,8 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 
 
   <!-- AOS -->
@@ -61,10 +63,10 @@
                   <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#packages"> Packages</a>
+                  <a class="nav-link" href="#package"> Packages</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact us</a>
+                  <a class="nav-link" href="#contact">Contact us</a>
                 </li>
               </ul>
               <!-- <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
@@ -72,7 +74,7 @@
               </form> -->
             </div>
             <div class="quote_btn-container ml-0 ml-lg-4 d-flex justify-content-center">
-              <a href="">
+              <a href="booking.html">
                 Book Now
               </a>
             </div>
@@ -81,6 +83,7 @@
       </div>
     </header>
     <!-- end header section -->
+
     <!-- slider section -->
     <section class=" slider_section position-relative">
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -103,11 +106,11 @@
                             evening scene. Discover the city’s best spots in style and comfort.
                           </p>
                           <div class="d-flex">
-                            <a href="" class="text-uppercase custom_orange-btn mr-3">
+                            <a href="#readmore1" class="text-uppercase custom_orange-btn mr-3">
                               Read More
                             </a>
-                            <a href="" class="text-uppercase custom_dark-btn">
-                              Contact Us
+                            <a href="booking.html" class="text-uppercase custom_dark-btn">
+                              Book Now
                             </a>
                           </div>
                         </div>
@@ -143,11 +146,11 @@
                             exhilarating experiences across Ghana’s most scenic landscapes.
                           </p>
                           <div class="d-flex">
-                            <a href="" class="text-uppercase custom_orange-btn mr-3">
+                            <a href="#readmore2" class="text-uppercase custom_orange-btn mr-3">
                               Read More
                             </a>
-                            <a href="" class="text-uppercase custom_dark-btn">
-                              Contact Us
+                            <a href="booking.html" class="text-uppercase custom_dark-btn">
+                              Book Now
                             </a>
                           </div>
                         </div>
@@ -184,11 +187,11 @@
                             encounters with wildlife and stunning landscapes.
                           </p>
                           <div class="d-flex">
-                            <a href="" class="text-uppercase custom_orange-btn mr-3">
+                            <a href="#readmore3" class="text-uppercase custom_orange-btn mr-3">
                               Read More
                             </a>
-                            <a href="" class="text-uppercase custom_dark-btn">
-                              Contact Us
+                            <a href="booking.html" class="text-uppercase custom_dark-btn">
+                              Book Now
                             </a>
                           </div>
                         </div>
@@ -222,12 +225,12 @@
                             Delve into Ghana's fascinating history, from colonization to independence, with tours that
                             highlight the resilience and heritage of the Ghanaian people.
                           </p>
-                          <div class="d-flex">
-                            <a href="" class="text-uppercase custom_orange-btn mr-3">
+                          <div class="d-flex" id="readmore">
+                            <a href="#readmore4" class="text-uppercase custom_orange-btn mr-3">
                               Readmore
                             </a>
-                            <a href="" class="text-uppercase custom_dark-btn">
-                              Contact Us
+                            <a href="booking.html" class="text-uppercase custom_dark-btn">
+                              Book Now
                             </a>
                           </div>
                         </div>
@@ -299,18 +302,16 @@
 
 
   <!-- packages section -->
-  <section id="packages">
+  <section id="package">
     <div class="service_section layout_padding ">
       <div class="container">
         <h2 class="custom_heading">Packages</h2>
         <p class="custom_heading-text">
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have
         </p>
         <div class=" layout_padding2">
           <div class="card-deck">
             <div class="card">
-              <img class="card-img-top" src="img/Accra-Places-15 (1).jpg" alt="Card image cap" />
+              <img class="card-img-top" id="readmore1" src="img/Accra-Places-15 (1).jpg" alt="Card image cap" />
               <div class="card-body">
 
                 <!-- Night package details -->
@@ -342,7 +343,7 @@
 
             <!-- Safari package details -->
             <div class="card">
-              <img class="card-img-top" src="img/Safari2.png" alt="Card image cap" />
+              <img class="card-img-top" id="readmore3" src="img/Safari2.png" alt="Card image cap" />
               <div class="card-body">
                 <h5 class="card-title">Safari Packages</h5>
                 <p class="card-text">
@@ -380,7 +381,7 @@
         <div class=" layout_padding2">
           <div class="card-deck" id="section-2">
             <div class="card">
-              <img class="card-img-top" src="img/Historical2.jpg" alt="Card image cap" />
+              <img class="card-img-top" id="readmore4" src="img/Historical2.jpg" alt="Card image cap" />
               <div class="card-body">
                 <h5 class="card-title">Historical Packages</h5>
                 <p class="card-text">
@@ -404,7 +405,7 @@
             </div>
 
             <div class="card">
-              <img class="card-img-top" src="/img/Volta.jpg" alt="Card image cap" />
+              <img class="card-img-top" id="readmore2" src="/img/Volta.jpg" alt="Card image cap" />
               <div class="card-body">
                 <h5 class="card-title">Adventure Packages</h5>
                 <p class="card-text">
@@ -432,24 +433,29 @@
                   or more relaxed water adventures, this experience is tailored to suit your preferences. After an
                   action-packed day, unwind on the sandy shores and indulge in a fresh seafood feast, enjoying the
                   coastal breeze and stunning views.
-
                 </p>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
+      <div class="d-flex justify-content-center" id="readmore">
+        <a href="booking.html" class="text-uppercase custom_orange-btn" id="book-now">
+          Book Now
+        </a>
       </div>
     </div>
   </section>
   <!-- end service section -->
 
+
   <!-- Memory section -->
   <section class="client_section layout_padding">
     <div class="container">
-      <h2 class="custom_heading">Create Lasting Memories with <br> Bonvas Tours Limited</h2>
+      <h2 class="custom_heading">At Bonvas Tours Limited, we create journeys that inspire, with every moment tailored to you.</h2>
       <p class="custom_heading-text">
-        Let's create lasting Memories
+       
       </p>
       <div>
         <div id="carouselExampleControls-2" class="carousel slide" data-ride="carousel">
@@ -538,7 +544,9 @@
   <!-- contact section -->
   <section class="contact_section layout_padding">
     <div class="container">
-      <h2 class="font-weight-bold">Contact Us</h2>
+      <h2 class="font-weight-bold">
+        Contact Us
+      </h2>
       <div class="row">
         <div class="col-md-8 mr-auto">
           <form id="contactForm" onsubmit="handleSubmit(event)">
@@ -558,8 +566,9 @@
                   <textarea id="message" name="message" placeholder="Message" required></textarea>
                 </div>
                 <div class="mt-5">
-                  <button type="submit" id="submitButton">Send</button>
-                  <div id="loadingIndicator" style="display: none;">Sending...</div>
+                  <button type="submit">
+                    send
+                  </button>
                 </div>
               </div>
             </div>
@@ -568,6 +577,7 @@
       </div>
     </div>
   </section>
+
   <!-- end contact section -->
 
 
@@ -593,7 +603,7 @@
           <p><a href="https://www.bonvastours.com" target="_blank">www.bonvastours.com</a></p>
         </div>
 
-        <div class="contact-info">
+        <div class="contact-info" id="contact">
           <h4>Contact Us</h4>
           <p>For personalized travel assistance, contact us at:</p>
           <p><strong>Phone:</strong> +233 261 671 686</p>
@@ -610,10 +620,14 @@
       <div class="footer-bottom">
         <p>&copy; Bonvas Tours Ltd, Kumasi, Ghana.</p>
         <div class="social-icons">
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-instagram"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <div class="social-icons">
+            <div class="social-icons">
+              <a href="https://web.facebook.com/bonvastours"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.tiktok.com/@bonvas.tours?_t=8qaYzmzKnJu&_r=1"><i class="fab fa-tiktok"></i></a>
+              <a href="https://www.instagram.com/bonvastours/"><i class="fab fa-instagram"></i></a>
+              <a href="https://linkedin.com/company/bonvas-tours"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

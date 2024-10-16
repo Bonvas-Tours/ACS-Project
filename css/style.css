@@ -1,8 +1,33 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   font-family: 'Poppins', sans-serif;
   color: #000000;
   overflow-x: hidden;
+
 }
+
+
+body {
+  background-image: url(/img/bgg4.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensure it's behind the content */
+  background-attachment:fixed;
+}
+
+
+
+
+
 
 .layout_padding {
   padding: 75px 0;
@@ -81,8 +106,6 @@ body {
 .hero_area.sub_pages {
   height: auto;
 }
-
-
 
 /* logo */
 .navbar-brand img {
@@ -200,7 +223,7 @@ a:focus {
   border-radius: 70% / 50%;
   /* Adjust values for a horizontal or vertical oval */
 }
-
+ 
 .slider_item-container {
   display: flex;
   align-items: center;
@@ -268,8 +291,8 @@ a:focus {
 
 /* end slider section */
 
-/* About section */
 
+/* About section */
 .about_section {
   margin-top: 100px;
 }
@@ -278,7 +301,6 @@ a:focus {
 #section-2 {
   margin-top: -200px;
 }
-
 
 
 .about_section .img-box img {
@@ -305,7 +327,6 @@ a:focus {
 }
 
 
-
 /* packages section */
 .service_section .card .card-img-top {
   width: 250px;
@@ -313,8 +334,6 @@ a:focus {
   margin: 55px auto 5px auto;
   border-radius: 25%;
 }
-
-
 
 
 .service_section .card {
@@ -442,10 +461,15 @@ a:focus {
 /* contact section */
 
 .contact_section {
-  background-image: url(../images/orange-dish.png);
+  background-image: url(../img/curve2.png);
   background-repeat: no-repeat;
-  background-size: 215px;
+  background-size: 400px;
   background-position: right center;
+}
+
+
+.contact_section h2 {
+margin-left: 50px;
 }
 
 .contact_section input {
@@ -454,6 +478,7 @@ a:focus {
   border-bottom: .8px solid #252525;
   width: 90%;
   margin: 10px 0;
+  margin-left: 50px;
 }
 
 .contact_form-container {
@@ -468,6 +493,7 @@ a:focus {
   padding: 8px 40px;
   text-transform: uppercase;
   font-size: 14px;
+  margin-left: 50px;
 }
 
 
@@ -600,8 +626,9 @@ a:focus {
 
 .map iframe {
   width: 100%;
-  height: 300px;
+  height: 170px;
   border: none;
+  margin-left: 70px;
 }
 
 
