@@ -29,7 +29,7 @@
     <link href="css/style.css" rel="stylesheet" />
     <!-- responsive style -->
     <link href="css/responsive.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 
     <!-- AOS -->
@@ -109,15 +109,7 @@
                                     <a class="nav-link" href="#contact">Contact us</a>
                                 </li>
                             </ul>
-                            <!-- <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form> -->
                         </div>
-                        <!-- <div class="quote_btn-container ml-0 ml-lg-4 d-flex justify-content-center">
-                            <a href="">
-                                Book Now
-                            </a>
-                        </div> -->
                     </div>
                 </nav>
             </div>
@@ -131,12 +123,12 @@
     <div class="container py-5" id="booking-form">
         <h2 class="text-center font-weight-bold mb-4">Book Your Exclusive Package</h2>
 
-        <form id="contactForm" method="POST" class="booking-form" onsubmit="handleSubmit(event)"> 
+        <form id="contactForm" method="POST" class="booking-form" onsubmit="handleSubmit(event)">
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="fullName">Full Name</label>
-                    <input type="text" class="form-control" id="fullName" name="name"
-                        placeholder="Enter your full name" required>
+                    <input type="text" class="form-control" id="fullName" name="name" placeholder="Enter your full name"
+                        required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="email">Email</label>
@@ -179,9 +171,9 @@
                 </div>
             </div>
 
-            <div class=" d-flex justify-content-center" >
+            <div class=" d-flex justify-content-center">
                 <div class="d-flex flex-column align-items-center">
-                    <button type="submit" id="submitButton" class="custom_orange-btn">Submit</button >
+                    <button type="submit" id="submitButton" class="custom_orange-btn">Submit</button>
                     <div id="loadingIndicator" style="margin-top: 5px; display: none;">Sending....</div>
                 </div>
             </div>
@@ -235,10 +227,12 @@
             <div class="footer-bottom">
                 <p>&copy; Bonvas Tours Ltd, Kumasi, Ghana.</p>
                 <div class="social-icons">
-                    <a href="https://web.facebook.com/bonvastours"><i class="fa fa-facebook"></i></a>
-                    <a href="https://www.tiktok.com/@bonvas.tours?_t=8qaYzmzKnJu&_r=1"><i class="fa fa-tiktok"></i></a>
-                    <a href="https://www.instagram.com/bonvastours/"><i class="fa fa-instagram"></i></a>
-                    <a href="http://linkedin.com/company/bonvas-tours"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://web.facebook.com/bonvastours"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@bonvas.tours?_t=8qaYzmzKnJu&_r=1"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/bonvastours/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/company/bonvas-tours"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://snapchat.com/t/hS8oSyeR"><i class="fab fa-snapchat"></i></a>
+
                 </div>
             </div>
         </div>
@@ -250,48 +244,48 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script>
         // Initialize EmailJS
-    
+
         // template_5ta04vs
         //service_fvz5xda
         (function () {
-          emailjs.init("ArTdhMuoZdsNFoM64"); // Replace with your public key
+            emailjs.init("ArTdhMuoZdsNFoM64"); // Replace with your public key
         })();
-    
+
         function handleSubmit(event) {
-          event.preventDefault();
-          const form = event.target;
-          const loadingIndicator = document.getElementById("loadingIndicator");
-          const submitButton = document.getElementById("submitButton");
-    
-          loadingIndicator.style.display = "block";
-          submitButton.disabled = true;
-    
-          emailjs.send("service_fvz5xda", "template_5ta04vs", {
-            from_name: form.name.value,
-            to_name: 'Bonvas Tours',
-            from_phone: form.phone.value,
-            from_email: form.email.value,
-            to_email: 'info@bonvastours.com',
-            message: `Package Selected: ${form.packageSelection.value},
+            event.preventDefault();
+            const form = event.target;
+            const loadingIndicator = document.getElementById("loadingIndicator");
+            const submitButton = document.getElementById("submitButton");
+
+            loadingIndicator.style.display = "block";
+            submitButton.disabled = true;
+
+            emailjs.send("service_fvz5xda", "template_5ta04vs", {
+                from_name: form.name.value,
+                to_name: 'Bonvas Tours',
+                from_phone: form.phone.value,
+                from_email: form.email.value,
+                to_email: 'info@bonvastours.com',
+                message: `Package Selected: ${form.packageSelection.value},
                       Package Selected Price: ${form.packagePriceSelection.value}
                       Special Request Message: ${form.specialRequests.value}      
             `,
-          })
-            .then(() => {
-              loadingIndicator.style.display = "none";
-              alert("Thank you. Our Team will contact you soon.");
-              form.reset();
             })
-            .catch((error) => {
-              loadingIndicator.style.display = "none";
-              console.error(error);
-              alert("Oops!, something went wrong. Please try again.");
-            })
-            .finally(() => {
-              submitButton.disabled = false;
-            });
+                .then(() => {
+                    loadingIndicator.style.display = "none";
+                    alert("Thank you. Our Team will contact you soon.");
+                    form.reset();
+                })
+                .catch((error) => {
+                    loadingIndicator.style.display = "none";
+                    console.error(error);
+                    alert("Oops!, something went wrong. Please try again.");
+                })
+                .finally(() => {
+                    submitButton.disabled = false;
+                });
         }
-      </script>
+    </script>
 </body>
 
 </html>
