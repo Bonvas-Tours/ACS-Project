@@ -851,6 +851,7 @@ a:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .client_img-box {
@@ -908,6 +909,7 @@ a:focus {
 .client_section_1 {
   padding: 60px 0;
   background-color: #f0f0f5;
+  overflow: hidden;
 }
 
 .container_1 {
