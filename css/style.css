@@ -387,14 +387,7 @@ a:focus {
     /* Reduce text size */
   }
 
-  .carousel-caption h1 {
-    font-size: 2rem;
-    /* Reduce heading size */
-  }
-
-  .carousel-caption p {
-    font-size: 1rem;
-  }
+  
 
   .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
     font-size: 14px;
@@ -403,7 +396,7 @@ a:focus {
   }
 
   .navbar-brand img {
-    width: 60px;
+    width: 100px;
     /* Further reduce logo size */
   }
 }
@@ -420,15 +413,9 @@ a:focus {
     /* Further reduce image height */
   }
 
-  .carousel-caption h1 {
-    font-size: 1.5rem;
-    /* Reduce heading size for smaller screens */
-  }
+  
 
-  .carousel-caption p {
-    font-size: 0.9rem;
-  }
-
+ 
   .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
     font-size: 12px;
     /* Smaller font size for nav links */
@@ -446,14 +433,70 @@ a:focus {
   .p-3 {
     font-size: 18px;
   }
+}
+ 
+/* Default styling for large screens */
+.carousel-caption h1 {
+  font-size: 4vw; /* Scales with viewport width */
+}
 
+.carousel-caption h4 {
+  font-size: 2vw; /* Scales with viewport width */
+}
+
+.carousel-caption p {
+  font-size: 1.2vw; /* Scales with viewport width */
+}
+
+/* Button Text Size */
+.custom-btn {
+  font-size: 1.2vw; /* Scales with viewport width */
+}
+
+/* Medium Devices (Tablet Screens) */
+@media (max-width: 991px) {
   .carousel-caption h1 {
-    font-size: 1.2rem;
+    font-size: 6vw;
+  }
+
+  .carousel-caption h4 {
+    font-size: 3.5vw;
   }
 
   .carousel-caption p {
-    font-size: 0.8rem;
+    font-size: 2vw;
   }
+
+  .custom-btn {
+    font-size: 2vw;
+  }
+}
+
+/* Small Devices (Mobile Screens) */
+@media (max-width: 767px) {
+  .carousel-caption h1 {
+    font-size: 8vw;
+  }
+
+  .carousel-caption h4 {
+    font-size: 5vw;
+  }
+
+  .carousel-caption p {
+    font-size: 3vw;
+  }
+
+  .custom-btn {
+    font-size: 3vw;
+  }
+}
+
+
+
+
+
+
+
 
   .navbar-brand img {
     width: 50px;
@@ -469,18 +512,11 @@ a:focus {
   .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
     padding: 5px 10px;
   }
-}
+
 
 /* For devices less than or equal to 360px (Very Small Devices) */
 @media (max-width: 360px) {
-  .carousel-caption h1 {
-    font-size: 1rem;
-  }
-
-  .carousel-caption p {
-    font-size: 0.7rem;
-  }
-
+ 
   .quote_btn-container a {
     font-size: 9px;
     padding: 2px 6px;
@@ -1107,48 +1143,8 @@ a:focus {
 
 }
 
-
 /* end map section */
 
-/* info section */
-.info_section ul {
-  padding: 0;
-}
-
-.info_section ul li {
-  list-style-type: none;
-  margin: 3px 0;
-
-}
-
-.info_section h5 {
-  margin-bottom: 12px;
-  font-size: 22px;
-}
-
-.info_section .social-box {
-  margin: 25px 0;
-}
-
-.info_section .social-box img {
-  width: 35px;
-  margin-right: 5px;
-}
-
-.info_section .form_container input {
-  width: 225px;
-  height: 30px;
-}
-
-.info_section .form_container button {
-  background-color: #fc5d35;
-  border: none;
-  outline: none;
-  color: #fff;
-  padding: 5px 30px;
-  margin-top: 15px;
-  font-size: 15px;
-}
 
 /* end info section */
 
